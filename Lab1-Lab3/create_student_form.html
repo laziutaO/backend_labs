@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add new student</title>
+</head>
+<body>
+    <h2>Add new student</h2>
+    <form id = "new_student" action="create_students.php" method="post">
+        <label for="surname">Surname:</label><br>
+        <input type="text" id="surname" name="surname" required><br>
+        
+        <label for="birth_year">Birth_year:</label><br>
+        <input type="number" id="birth_year" name="birth_year" required><br>
+        
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="M" required> Male
+        <input type="radio" id="female" name="gender" value="F" required> Female<br>
+        
+        <label for="group_name">Group name:</label><br>
+        <input type="text" id="group_name" name="group_name" required><br>
+        
+        <label for="faculty">Faculty:</label><br>
+        <input type="text" id="faculty" name="faculty" required><br>
+        
+        <label for="average_score">Average score:</label><br>
+        <input type="number" step="0.01" id="average_score" name="average_score" required><br><br>
+        
+        <input type="submit" value="Add student">
+    </form>
+    <a href="show_tables.php">Return to the main page</a>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 50px; 
+        }
+        .button-container button {
+            width: 200px; 
+            height: 40px;
+            margin: 10px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Weather App</h1>
+    <div class="button-container">
+        <button onclick="window.location.href='/weather/Zhytomyr'">Zhytomyr</button>
+        <button onclick="window.location.href='/weather/Kyiv'">Kyiv</button>
+        <button onclick="window.location.href='/weather/Lviv'">Lviv</button>
+        <button onclick="window.location.href='/weather/Kharkiv'">Kharkiv</button>
+        <button onclick="window.location.href='/weather/Ternopil'">Ternopil</button>
+    </div>
+</body>
+</html>
+
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Students</title>
+</head>
+<body>
+    <h2>Search Students</h2>
+    <form action="keyword_search.php" method="post">
+        <label for="keyword">Keyword:</label><br>
+        <input type="text" id="keyword" name="keyword"><br>
+        <input type="hidden" name="search_type" value="keyword">
+        <input type="submit" value="Search by Keyword"><br><br>
+    </form>
+
+    <form action="pattern_search.php" method="post">
+        <label for="pattern">Pattern:</label><br>
+        <input type="text" id="pattern" name="pattern"><br>
+        <input type="hidden" name="search_type" value="pattern">
+        <input type="submit" value="Search by Pattern"><br><br>
+    </form>
+
+    <form action="range_search.php" method="post">
+        <label for="min_date">From Date:</label><br>
+        <input type="date" id="min_date" name="min_date"><br>
+        <label for="max_date">To Date:</label><br>
+        <input type="date" id="max_date" name="max_date"><br><br>
+        <input type="submit" value="Search by date range">
+    </form>
+</body>
+</html>
